@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+/* RESET GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+	vertical-align: baseline;
+}
+
+
+a:hover{
+    color: #D3A982;
+}
+
+ul {
+	list-style: none;
+}
+
+/* NAVBAR */
+.navbar{
+    width: 100%;
+    top: 0;
+    margin: 0 auto;
+    background-color: #2F0B18;
+}
+
+.logo{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo a img{
+    margin-top: 10px;
+    width: 90px;
+    height: 90px;
+}
+
+.menu-nav{
+    margin-top: 22px;
+    text-align: center;
+}
+
+.menu-nav ul li{
+    display: inline;
+    margin-left: 30px;
+}
+
+.menu-nav ul li a{
+    font-family: 'Bungee', Tahoma, sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-nav ul li a:hover{
+    color:#D3A982
+}
+
+.navbar-clara{
+    position: absolute;
+    margin-top: 70px;
+    background-color: #D3A982;
+    width: 100%;
+    height: 35px;
+}
+
+
+
+@media only screen and (max-width: 787px) {
+    .logo a img{
+        margin-top: 20px;
+        width: 120px;
+        height: 120px;
+    }
+    .menu-nav{
+        margin-top: 4px;
+        margin-bottom: 0;
+    }
+    .navbar-clara{
+        position: absolute;
+        margin-top: 270px;
+        background-color: #D3A982;
+        width: 100%;
+        height: 30px;
+    }
+
+}
+/* Fim da NAV */
+
+/* Itens */
+.linha_vinho{
+    position: absolute;
+    background-color: #522337;
+    width: 100%;
+    margin-top: 460px;
+    height: 220px;
+}
+.container_itens{
+    width: 1480px;
+    padding: 0px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.itens{
+    display: flex;
+    text-align:center;
+    height: 660px;
+}
+.quadrado_texto_1{order: 1;}
+.banner{order: 2;}
+.quadrado_texto_2{order: 3;}
+
+.banner_img{
+    margin-left: 25px;
+    width: 450px;
+}
+
+.quadrado_texto_1, .quadrado_texto_2{
+margin-top: 200px;
+}
+
+.quadrado_texto_2{
+    margin-left: 60px;
+}
+
+.quadrado{
+    width: 400px;
+    height: 400px;
+    background-color: #D3A982;
+    box-shadow: #0a0a0a77 -2px 2px 15px;
+    margin: 0 auto;
+}
+
+.h2-quadrado{
+    background-color: #2F0B18;
+    height: 85px;
+    color: #ffffff;
+    font-family: 'Bungee', cursive;
+    font-size: 2em;
+}
+
+.p-quadrado{
+    color: #ffffff;
+    font-family: 'Tahoma';
+    font-size: 1.3em;
+    margin-top: 70px;
+}
+
+@media only screen and (min-width: 788px) and (max-width: 1450px) {
+    .linha_vinho{
+        margin-top: 480px;
+        height: 440px;
+    }
+
+    .container_itens{
+        width: 820px;
+    }
+    .itens{
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 900px;
+    }
+    .banner{
+        width: 100%;
+    }
+    .banner_img{
+        margin-left: 0px;
+        order: 1;
+    }
+    .quadrado_texto_1{
+        width: 370px;
+        order: 2;
+    }
+    .quadrado_texto_2{
+        margin-left: 0;
+        width: 370px;
+        order: 3;
+    }
+    .quadrado_texto_1, .quadrado_texto_2{
+        margin: 40px 0px 0px 0px;
+        width: 400px;
+    }
+    .quadrado{
+        margin: 0px;
+        width: 370px;
+        height: 370px;
+    }
+    .p-quadrado{
+        margin-top: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 788px){
+    .linha_vinho{
+        margin-top: 340px;
+        height: 690px;
+    }
+    .container_itens{
+        width: 300px;
+        height: 1010px;
+    }
+    .itens{
+        flex-direction: column;
+    }
+    .banner{
+        margin-top: 20px;
+        margin-bottom: 0px;
+        width: 300px;
+    }
+    .banner_img{
+        margin-left: 0px;
+        width: 100%;
+        order: 1;
+    }
+    .quadrado_texto_1{
+        width: 300px;
+        order: 2;
+    }
+    .quadrado_texto_2{
+        margin-left: 0;
+        width: 300px;
+        order: 3;
+    }
+    .quadrado_texto_1, .quadrado_texto_2{
+        margin-top: 20px;
+        width: 300px;
+    }
+    .quadrado{
+        margin: 0px;
+        width: 300px;
+        height: 300px;
+    }
+    .p-quadrado{
+        margin-top: 10px;
+    }
+}
+/* Fim dos Itens */
+/* Nossa história */
+.container_equipe{
+    width: 1480px;
+    padding: 0px;
+    position: relative;
+    margin: 20px auto;
+}
+.quadrado_nh{
+    background-color: #2F0B18;
+    width: 500px;
+    height: 75px;
+    margin: 0 auto;
+}
+.nossa_historia{
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Bungee', cursive;
+    font-size: 2em;
+    margin: 0px auto;
+}
+.nossa_patroa, .nosso_patrao{
+    text-align: center;
+}
+.img_fundadores{
+    width: 530px;
+    height: 300px;
+}
+
+.fundadores_quadrado{
+    width: 320px;
+    height: 60px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #2F0B18;;
+}
+
+.patrao_h3{
+    color: #ffffff;
+    font-family: 'Bungee', cursive;
+    font-size: 1.5em;
+}
+
+.quadrado_fundadores{
+    border: solid 3px #2F0B18;
+    border-radius: 30px;
+    margin: 0 auto;
+    width: 530px;
+    height: 250px;
+    background-color: #ffffff;
+}
+
+.p-patroa, .p-patrao{
+    padding: 30px 30px;
+    color: #2F0B18;
+    font-family: 'Tahoma';
+    font-size: 1.3em;
+}
+
+.p-patroa{
+    font-size: 1.2em
+}
+
+.linha_marrom{
+    width: 100%;
+    background-color: #D3A982;
+    height: 245px;
+    margin-top: 100px;
+    position: absolute;
+}
+
+@media only screen and (min-width: 788px) and (max-width: 1450px) {
+    .container_equipe{
+        width: 820px;
+    }
+    .img_fundadores{
+        width: 380px;
+        height: 210px;
+    }
+    .quadrado_fundadores{
+        width: 380px;
+        height: 250px;  
+    }
+    .p-patroa, .p-patrao{
+        font-size: 1.05em;
+    }
+    .nossa_patroa, .nosso_patrao{
+        width: 380px;
+    }
+    .linha_marrom{
+        height: 190px;
+        margin-top: 85px;
+    }
+}
+
+@media only screen and (max-width: 788px){
+    .container_equipe{
+        margin-top: 40px;
+        width: 300px;
+    }
+    .img_fundadores{
+        width: 300px;
+        height: 180px;
+    }
+    .quadrado_fundadores{
+        width: 300px;
+        height: 250px;  
+        border-radius: 0px 0px 30px 30px;
+    }
+    .nossa_patroa, .nosso_patrao{
+        width: 300px;
+    }
+    .fundadores_quadrado{
+        margin-top: -10px;
+        width: 300px;
+    }
+    .quadrado_nh{
+        width: 300px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    .p-patroa{
+        font-size: 0.95em;
+    }
+    .p-patrao{
+        font-size: 1.05em;
+    }
+    .nossa_historia{
+        font-size: 1.2em;
+    }
+}
+/* Nossa história */
+
+/* Footer */
+.footer{
+    width: 100%;
+    background-color: #522337;
+    color: #ffffff;
+    margin-top: 660px;
+    padding: 10px 0px 20px 0px;
+}
+
+.footer h3{
+    color: #D3A982;
+    font-family: 'Bungee',Tahoma;
+    font-size: 1.3em;
+}
+
+.footer p{
+    font-family: tahoma;
+    font-size: 1em;
+    font-weight: bold;
+}
+.footer_redes ul li{
+    display: inline-block;
+}
+
+.redesocial {
+    width: 50px;
+    padding-left: 10px;
+}
+
+.footer_marrom{
+    width: 100%;
+    height: 35px;
+    background-color: #D3A982;
+}
+
+@media only screen and (min-width: 788px) and (max-width: 1450px) {
+    .footer{
+        margin-top: 560px;
+    }
+}
+@media only screen and (max-width: 788px){
+    .footer{
+        margin-top: 60px;
+        text-align: center;
+    }
+}
